@@ -1,0 +1,27 @@
+<div class="container text-center">   
+    
+    <h3 >History Numbers</h3>
+    <table class="table table-striped text-center" >
+        <thead>
+        <tr>
+            <td  scope="col">id</td>
+            
+            <td  scope="col"> number</td>
+            <td scope="col"> valid </td>
+            <td scope="col">time </td>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let event of userEvents">
+           <td>{{event.id}}</td>
+
+           <td>{{event.number}}</td>
+           <td>{{event.valid}}</td>
+           <td>{{event.timestamp}}</td>
+
+        </tr>
+    </tbody>
+    
+    </table>
+    </div>
